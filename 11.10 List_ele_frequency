@@ -1,0 +1,11 @@
+lst = eval (input("Enter a list: "))
+length = len(lst)
+element = input("Enter element: ")
+count = 0
+for i in range(0,length):
+    if element == lst[i]: 
+        count += 1
+if count == 0:
+    print(element, "not found in given list")
+else:
+    print(element, "has frequence as", count, "in given list")
